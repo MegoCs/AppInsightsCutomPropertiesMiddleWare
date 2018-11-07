@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiSample", "AiSample\AiSample.csproj", "{90E6DE0A-F448-439E-AB34-CE17F7EAE27B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90E6DE0A-F448-439E-AB34-CE17F7EAE27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E6DE0A-F448-439E-AB34-CE17F7EAE27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E6DE0A-F448-439E-AB34-CE17F7EAE27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E6DE0A-F448-439E-AB34-CE17F7EAE27B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F064136-CF96-4B3F-BB4D-A08F66074B67}
+	EndGlobalSection
+EndGlobal
