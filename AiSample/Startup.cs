@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AiSample.Helper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -39,8 +40,13 @@ namespace AiSample
             {
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
+            var logConf = new AppInsightsCustomMiddlewareSettings();
+            Configuration.Bind("AppInsightsCustomMiddlewareSettings", logConf);
+            if (logConf.IsEnabled)
+            {
+                app.UseAppInsightsCutomProperties();
+            }
             app.UseMvc();
         }
     }

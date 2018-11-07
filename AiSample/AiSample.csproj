@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationInsightsResourceId>/subscriptions/8cd248e0-bfbc-439d-b448-72786f93e562/resourcegroups/KSA_LOGIC_APPS/providers/microsoft.insights/components/IKEABHAppService</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/8cd248e0-bfbc-439d-b448-72786f93e562/resourcegroups/KSA_LOGIC_APPS/providers/microsoft.insights/components/IKEABHAppService</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,8 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.5.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
